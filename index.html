@@ -68,10 +68,10 @@
 					<li>
 						<div id="luggage-yellow-container">
 							<div id="luggage-yellow">
-								<div id="luggage-yellow-line">
-
-
-								</div>
+								<div id="luggage-yellow-line"></div>
+								<div id="luggage-yellow-handle"></div>
+								<div id="luggage-yellow-lock-left"></div>
+								<div id="luggage-yellow-lock-right"></div>
 							</div>
 
 						</div>
@@ -109,8 +109,12 @@
 
 <script>
 	$(function () {
-		$("#luggage-container ").sortable();
-		$("#luggage-container ").disableSelection();
+		$("#luggage-container").sortable({
+			revert: true
+		});
+		$("#luggage-container").disableSelection();
+
+
 	});
 </script>
 
