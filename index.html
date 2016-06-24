@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Luggage | Jacquelyn Zen</title>
+	<link rel="stylesheet" type="text/css" href="luggage.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+
+
+	<div id="container">
+		<div id="trolley">
+			<!-- TROLLEY PARTS IN HERE -->
+			<div id="trolley-frame">
+				<div id="trolley-top">
+					<div id="trolley-rod"></div>
+				</div>
+				<div id="trolley-wheels">
+					<div id="wheel1"></div>
+					<div id="wheel2"></div>
+				</div>
+			</div>
+
+			<!-- TROLLEY PARTS END HERE -->
+
+
+			<!-- LUGGAGES IN HERE -->
+
+			<ul id="sortable">
+				<div id="luggage-container">
+
+					<!-- RED LUGGAGE-->
+					<li>
+						<div id="luggage-red-container">
+							<div id="luggage-red">
+								<div id="luggage-red-corners-bottom"></div>
+								<div id="luggage-red-corners-top"></div>
+								<div id="luggage-red-keyhole-left"></div>
+								<div id="luggage-red-keyhole-right"></div>
+								<div id="luggage-red-handle"></div>
+							</div>
+						</div>
+					</li>
+					<!-- END OF RED LUGGAGE-->
+
+					<!-- BLUE LUGGAGE-->
+					<li>
+						<div id="luggage-blue-container">
+							<div id="luggage-blue">
+								<div id="luggage-blue-corners-bottom"></div>
+								<div id="luggage-blue-corners-top"></div>
+								<div id="luggage-blue-straps"></div>
+								<div id="luggage-blue-handle-back"></div>
+								<div id="luggage-blue-handle"></div>
+							</div>
+						</div>
+					</li>
+
+					<!-- END OF BLUE LUGGAGE-->
+
+
+					<!-- YELLOW LUGGAGE-->
+					<li>
+						<div id="luggage-yellow-container">
+							<div id="luggage-yellow">
+								<div id="luggage-yellow-line">
+
+
+								</div>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- END OF YELLOW LUGGAGE-->
+
+				</div>
+			</ul>
+
+			<!-- LUGGAGES END HERE -->
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js "></script>
+
+<script>
+	$(function () {
+		$("#luggage-container ").sortable();
+		$("#luggage-container ").disableSelection();
+	});
+</script>
+
+</html>
