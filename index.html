@@ -8,10 +8,14 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="icon" type="image/ico" href="images/favicon.ico" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 </head>
 
 <body>
 
+
+	<h1>Luggage Trolley</h1>
+	<h2>by Jacquelyn Zen</h2>
 
 	<div id="container">
 		<div id="trolley">
@@ -34,6 +38,73 @@
 			<ul id="sortable">
 				<div id="luggage-container">
 
+					<!-- GRAY LUGGAGE-->
+					<li>
+						<div id="luggage-gray-container">
+							<div id="luggage-gray">
+								<div id="luggage-gray-corners-bottom"></div>
+								<div id="luggage-gray-corners-top"></div>
+								<div id="luggage-gray-keyhole-left"></div>
+								<div id="luggage-gray-keyhole-right"></div>
+
+								<div id="luggage-gray-lock-left"></div>
+								<div id="luggage-gray-keyhole-left"></div>
+
+								<div id="luggage-gray-lock-right"></div>
+								<div id="luggage-gray-keyhole-right"></div>
+								<div id="luggage-gray-handle"></div>
+
+							</div>
+						</div>
+					</li>
+					<!-- END OF GRAY LUGGAGE-->
+
+
+					<!-- ORANGE LUGGAGE-->
+					<li>
+						<div id="luggage-orange-container">
+							<div id="luggage-orange">
+
+								<div id="luggage-orange-corners-bottom"></div>
+								<div id="luggage-orange-corners-top"></div>
+								<div id="luggage-orange-straps"></div>
+								<div id="luggage-orange-lock"></div>
+								<div id="luggage-orange-keyhole"></div>
+
+							</div>
+						</div>
+					</li>
+					<!-- END OF ORANGE LUGGAGE-->
+
+					<!-- YELLOW LUGGAGE-->
+					<li>
+						<div id="luggage-yellow-container">
+							<div id="luggage-yellow">
+								<div id="luggage-yellow-line"></div>
+								<div id="luggage-yellow-handle"></div>
+								<div id="luggage-yellow-lock-left"></div>
+								<div id="luggage-yellow-lock-right"></div>
+							</div>
+						</div>
+					</li>
+
+					<!-- END OF YELLOW LUGGAGE-->
+
+					<!-- BLUE LUGGAGE-->
+					<li>
+						<div id="luggage-blue-container">
+							<div id="luggage-blue">
+								<div id="luggage-blue-corners-bottom"></div>
+								<div id="luggage-blue-corners-top"></div>
+								<div id="luggage-blue-straps"></div>
+								<div id="luggage-blue-handle-back"></div>
+								<div id="luggage-blue-handle"></div>
+							</div>
+						</div>
+					</li>
+					<!-- END OF BLUE LUGGAGE-->
+
+
 					<!-- RED LUGGAGE-->
 					<li>
 						<div id="luggage-red-container">
@@ -48,36 +119,9 @@
 					</li>
 					<!-- END OF RED LUGGAGE-->
 
-					<!-- BLUE LUGGAGE-->
-					<li>
-						<div id="luggage-blue-container">
-							<div id="luggage-blue">
-								<div id="luggage-blue-corners-bottom"></div>
-								<div id="luggage-blue-corners-top"></div>
-								<div id="luggage-blue-straps"></div>
-								<div id="luggage-blue-handle-back"></div>
-								<div id="luggage-blue-handle"></div>
-							</div>
-						</div>
-					</li>
-
-					<!-- END OF BLUE LUGGAGE-->
 
 
-					<!-- YELLOW LUGGAGE-->
-					<li>
-						<div id="luggage-yellow-container">
-							<div id="luggage-yellow">
-								<div id="luggage-yellow-line"></div>
-								<div id="luggage-yellow-handle"></div>
-								<div id="luggage-yellow-lock-left"></div>
-								<div id="luggage-yellow-lock-right"></div>
-							</div>
 
-						</div>
-					</li>
-
-					<!-- END OF YELLOW LUGGAGE-->
 
 				</div>
 			</ul>
@@ -113,6 +157,13 @@
 			revert: true
 		});
 		$("#luggage-container").disableSelection();
+
+
+		$("#trolley").draggable({
+			axis: "x"
+
+		});
+
 
 
 	});
